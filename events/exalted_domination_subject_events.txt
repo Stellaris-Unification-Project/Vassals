@@ -139,8 +139,10 @@ country_event = {
 	is_triggered_only = yes
 
 	trigger = {
-		NOT = { has_country_flag = exalted_advanced_tributary_offered }
-		NOT = { has_country_flag = exalted_advanced_vassal_offered }
+		NOR = {
+			has_country_flag = exalted_advanced_tributary_offered
+			has_country_flag = exalted_advanced_vassal_offered
+		}
 		OR = { 
 			is_subject_type = tributary
 			AND = {
@@ -510,10 +512,8 @@ country_event = {
 					has_authority = auth_machine_intelligence
 					NOT = { has_civic = civic_machine_servitor }
 				}
-				has_ethic = ethic_egalitarian
-				has_ethic = ethic_fanatic_egalitarian
-				has_ethic = ethic_xenophile
-				has_ethic = ethic_fanatic_xenophile
+				is_egalitarian = yes
+				is_xenophile = yes
 			}
 		}
 		hidden_effect = {
@@ -537,10 +537,8 @@ country_event = {
 			OR = {
 				has_civic = civic_feudal_realm
 				has_authority = auth_machine_intelligence
-				has_ethic = ethic_pacifist
-				has_ethic = ethic_fanatic_pacifist
-				has_ethic = ethic_xenophile
-				has_ethic = ethic_fanatic_xenophile
+				is_pacifist = yes
+				is_xenophile = yes
 			}
 		}
 		hidden_effect = {
@@ -563,10 +561,8 @@ country_event = {
 		trigger = {
 			OR = {
 				has_civic = civic_feudal_realm
-				has_ethic = ethic_authoritarian
-				has_ethic = ethic_fanatic_authoritarian
-				has_ethic = ethic_spiritualist
-				has_ethic = ethic_fanatic_spiritualist
+				is_authoritarian = yes
+				is_spiritualist = yes
 			}
 		}
 		hidden_effect = {
@@ -591,10 +587,8 @@ country_event = {
 				has_civic = civic_feudal_realm
 				has_authority = auth_hive_mind
 				has_authority = auth_machine_intelligence
-				has_ethic = ethic_egalitarian
-				has_ethic = ethic_fanatic_egalitarian
-				has_ethic = ethic_spiritualist
-				has_ethic = ethic_fanatic_spiritualist
+				is_egalitarian = yes
+				is_spiritualist = yes
 			}
 		}
 		hidden_effect = {
@@ -617,10 +611,8 @@ country_event = {
 		trigger = {
 			OR = {
 				has_civic = civic_feudal_realm
-				has_ethic = ethic_authoritarian
-				has_ethic = ethic_fanatic_authoritarian
-				has_ethic = ethic_militarist
-				has_ethic = ethic_fanatic_militarist
+				is_authoritarian = yes
+				is_militarist = yes
 			}
 		}
 		hidden_effect = {
@@ -755,10 +747,8 @@ country_event = {
 			OR = {
 				has_civic = civic_feudal_realm
 				has_authority = auth_machine_intelligence
-				has_ethic = ethic_materialist
-				has_ethic = ethic_fanatic_materialist
-				has_ethic = ethic_militarist
-				has_ethic = ethic_fanatic_militarist
+				is_materialist = yes
+				is_militarist = yes
 			}
 		}
 		hidden_effect = {
@@ -782,10 +772,8 @@ country_event = {
 			OR = {
 				has_civic = civic_feudal_realm
 				has_authority = auth_hive_mind
-				has_ethic = ethic_pacifist
-				has_ethic = ethic_fanatic_pacifist
-				has_ethic = ethic_xenophobe
-				has_ethic = ethic_fanatic_xenophobe
+				is_pacifist = yes
+				is_xenophobe = yes
 			}
 		}
 		hidden_effect = {
@@ -810,10 +798,8 @@ country_event = {
 				has_civic = civic_feudal_realm
 				has_authority = auth_hive_mind
 				has_civic = civic_machine_servitor
-				has_ethic = ethic_materialist
-				has_ethic = ethic_fanatic_materialist
-				has_ethic = ethic_xenophobe
-				has_ethic = ethic_fanatic_xenophobe
+				is_materialist = yes
+				is_xenophobe = yes
 			}
 		}
 		hidden_effect = {
@@ -889,10 +875,8 @@ country_event = {
 			OR = {
 				has_civic = civic_feudal_realm
 				has_authority = auth_hive_mind
-				has_ethic = ethic_militarist
-				has_ethic = ethic_fanatic_militarist
-				has_ethic = ethic_spiritualist
-				has_ethic = ethic_fanatic_spiritualist
+				is_militarist = yes
+				is_spiritualist = yes
 			}
 		}
 		hidden_effect = {
@@ -914,10 +898,8 @@ country_event = {
 			OR = {
 				has_civic = civic_feudal_realm
 				has_authority = auth_machine_intelligence
-				has_ethic = ethic_materialist
-				has_ethic = ethic_fanatic_materialist
-				has_ethic = ethic_xenophile
-				has_ethic = ethic_fanatic_xenophile
+				is_materialist = yes
+				is_xenophile = yes
 			}
 		}
 		hidden_effect = {
@@ -939,10 +921,8 @@ country_event = {
 			OR = {
 				has_civic = civic_feudal_realm
 				has_authority = auth_hive_mind
-				has_ethic = ethic_egalitarian
-				has_ethic = ethic_fanatic_egalitarian
-				has_ethic = ethic_pacifist
-				has_ethic = ethic_fanatic_pacifist
+				is_egalitarian = yes
+				is_pacifist = yes
 			}
 		}
 		hidden_effect = {
@@ -964,10 +944,8 @@ country_event = {
 			OR = {
 				has_civic = civic_feudal_realm
 				has_authority = auth_machine_intelligence
-				has_ethic = ethic_authoritarian
-				has_ethic = ethic_fanatic_authoritarian
-				has_ethic = ethic_xenophobe
-				has_ethic = ethic_fanatic_xenophobe
+				is_authoritarian = yes
+				is_xenophobe = yes
 			}
 		}
 		hidden_effect = {
@@ -1028,14 +1006,10 @@ country_event = {
 			OR = {
 				has_civic = civic_feudal_realm
 				has_authority = auth_machine_intelligence
-				has_ethic = ethic_authoritarian
-				has_ethic = ethic_fanatic_authoritarian
-				has_ethic = ethic_materialist
-				has_ethic = ethic_fanatic_materialist
-				has_ethic = ethic_militarist
-				has_ethic = ethic_fanatic_militarist
-				has_ethic = ethic_xenophobe
-				has_ethic = ethic_fanatic_xenophobe
+				is_authoritarian = yes
+				is_materialist = yes
+				is_militarist = yes
+				is_xenophobe = yes
 			}
 		}
 		hidden_effect = {
@@ -1059,14 +1033,10 @@ country_event = {
 			OR = {
 				has_civic = civic_feudal_realm
 				has_authority = auth_hive_mind
-				has_ethic = ethic_egalitarian
-				has_ethic = ethic_fanatic_egalitarian
-				has_ethic = ethic_pacifist
-				has_ethic = ethic_fanatic_pacifist
-				has_ethic = ethic_spiritualist
-				has_ethic = ethic_fanatic_spiritualist
-				has_ethic = ethic_xenophile
-				has_ethic = ethic_fanatic_xenophile
+				is_egalitarian = yes
+				is_pacifist = yes
+				is_spiritualist = yes
+				is_xenophile = yes
 			}
 		}
 		hidden_effect = {
@@ -1144,14 +1114,10 @@ country_event = {
 			OR = {
 				has_civic = civic_feudal_realm
 				has_authority = auth_machine_intelligence
-				has_ethic = ethic_authoritarian
-				has_ethic = ethic_fanatic_authoritarian
-				has_ethic = ethic_militarist
-				has_ethic = ethic_fanatic_militarist
-				has_ethic = ethic_spiritualist
-				has_ethic = ethic_fanatic_spiritualist
-				has_ethic = ethic_xenophobe
-				has_ethic = ethic_fanatic_xenophobe
+				is_authoritarian = yes
+				is_militarist = yes
+				is_spiritualist = yes
+				is_xenophobe = yes
 			}
 		}
 		hidden_effect = {
@@ -1176,14 +1142,10 @@ country_event = {
 			OR = {
 				has_civic = civic_feudal_realm
 				has_authority = auth_hive_mind
-				has_ethic = ethic_egalitarian
-				has_ethic = ethic_fanatic_egalitarian
-				has_ethic = ethic_materialist
-				has_ethic = ethic_fanatic_materialist
-				has_ethic = ethic_pacifist
-				has_ethic = ethic_fanatic_pacifist
-				has_ethic = ethic_xenophile
-				has_ethic = ethic_fanatic_xenophile
+				is_egalitarian = yes
+				is_materialist = yes
+				is_pacifist = yes
+				is_xenophile = yes
 			}
 		}
 		hidden_effect = {
@@ -1256,10 +1218,7 @@ country_event = {
 
 		if = {
 			limit = {
-				NOR = {
-					has_ethic = ethic_xenophile
-					has_ethic = ethic_fanatic_xenophile
-				}
+				is_xenophile = no
 			}
 
 			shift_ethic = ethic_xenophile
@@ -1326,10 +1285,7 @@ country_event = {
 
 			if = {
 				limit = {
-					NOR = {
-						has_ethic = ethic_fanatic_spiritualist
-						has_ethic = ethic_spiritualist
-					}
+					is_spiritualist = no
 				}
 				clear_ethos = yes
 				country_add_ethic = ethic_fanatic_authoritarian
@@ -1349,10 +1305,7 @@ country_event = {
 			log = "exalted_subjects.11: [This.GetName] is fanatic spiritualist"
 			if = {
 				limit = {
-					NOR = {
-						has_ethic = ethic_fanatic_authoritarian
-						has_ethic = ethic_authoritarian
-					}
+					is_authoritarian = no
 				}
 				clear_ethos = yes
 				country_add_ethic = ethic_fanatic_spiritualist
@@ -1438,10 +1391,7 @@ country_event = {
 
 		if = {
 			limit = {
-				NOR = {
-					has_ethic = ethic_pacifist
-					has_ethic = ethic_fanatic_pacifist
-				}
+				is_pacifist = no
 			}
 
 			shift_ethic = ethic_pacifist
@@ -1490,10 +1440,7 @@ country_event = {
 
 		if = {
 			limit = {
-				NOR = {
-					has_ethic = ethic_militarist
-					has_ethic = ethic_fanatic_militarist
-				}
+				is_militarist = no
 			}
 
 			shift_ethic = ethic_militarist
@@ -1623,10 +1570,7 @@ country_event = {
 
 		if = {
 			limit = {
-				NOR = {
-					has_ethic = ethic_authoritarian
-					has_ethic = ethic_fanatic_authoritarian
-				}
+				is_authoritarian = no
 			}
 
 			shift_ethic = ethic_authoritarian
@@ -1717,10 +1661,7 @@ country_event = {
 
 			if = {
 				limit = {
-					NOR = {
-						has_ethic = ethic_fanatic_spiritualist
-						has_ethic = ethic_spiritualist
-					}
+					is_spiritualist = no
 				}
 				clear_ethos = yes
 				country_add_ethic = ethic_fanatic_egalitarian
@@ -1740,10 +1681,7 @@ country_event = {
 			log = "exalted_subjects.11: [This.GetName] is fanatic spiritualist"
 			if = {
 				limit = {
-					NOR = {
-						has_ethic = ethic_fanatic_egalitarian
-						has_ethic = ethic_egalitarian
-					}
+					is_egalitarian = no
 				}
 				clear_ethos = yes
 				country_add_ethic = ethic_fanatic_spiritualist

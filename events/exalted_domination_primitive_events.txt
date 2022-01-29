@@ -12,10 +12,7 @@ country_event = {
 			AND = {
 				exists = from
 				from = {
-					OR = {
-						is_country_type = default
-						is_country_type = awakened_fallen_empire
-					}
+					is_country_type_with_subjects = yes
 				}
 			}
 			AND = {
@@ -229,7 +226,7 @@ country_event = {
 				else_if = {
 					limit = {
 						starbase = {
-							NOT = { owner = { is_same_value = root } }
+							NOT = { is_owned_by = root }
 						}
 					}	
 					starbase = {
