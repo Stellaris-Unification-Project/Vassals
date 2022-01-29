@@ -1,0 +1,13 @@
+﻿l_braz_por:
+ civic_tooltip_feudal_realm_effects: "You may choose vassal and tributary types regardless of government ethics."
+
+ tr_domination_colonial_viceroys: "Executive Decisions"
+ tr_domination_colonial_viceroys_desc: "£blocker£ §Y$MOD_PLANET_CLEAR_BLOCKER_COST_MULT$§! reduced by §G33%§!.\n§Y$mod_decisions_influence_cost_mult$§! reduced by §G20%§!.\nUnlocks new planetary decisions."
+ tr_domination_adopt_void_desc: "£alloys£ §YHabitat Upkeep§! reduced by §G20%§!\n§Y$mod_decisions_influence_cost_mult$§! reduced by §G20%§!.\nUnlocks new planetary decisions."
+ tr_domination_grand_council_desc: "§Y$MOD_COUNTRY_LEADER_POOL_SIZE$§! increased by §Y1§!.\nNew §YLeaders§! have reduced cost and upkeep."
+ tr_domination_imperious_architecture_desc: "£building£ §YCapital Buildings§! and £building£ §YHousing Buildings§! provide §G+1§! £housing£ §Y$MOD_PLANET_HOUSING_ADD$§! each.\nOur planets gain §Y1§! £job_soldier£ §Y$job_soldier$ Job§! and §Y1§! per §Y25§! £pop£ Pops."
+ tr_domination_modular_depot_desc: "§Y$EMPIRE_SIZE$§! from §YDistricts§! is reduced by §G25%§!.\nOur planets gain §Y1§! £job_warrior_drone£ §Y$job_warrior_drone$ Job§! and §Y1§! per §Y25§! £pop£ Pops."
+ tr_domination_synaptic_extensions_desc: "£building£ §Y$building_hive_node$§! now also increase £housing£ §Y$MOD_PLANET_HOUSING_ADD$§! by §Y2§!.\nOur planets gain §Y1§! £job_warrior_drone£ §Y$job_warrior_drone$ Job§! and §Y1§! per §Y25§! £pop£ Pops."
+
+ SUBJECT_DESC_vassal: "Vassals are subservient to their Overlord. They have limited diplomatic options, and fight along their Overlord.\nCan Expand: £trigger_no£\nHas Diplomatic Powers: £trigger_no£\nProtected By Overlord: £trigger_yes£\nDefends Overlord: £trigger_yes£\nCan Be Integrated: £trigger_yes£"
+ SUBJECT_DESC_tributary: "Tributaries are a type of subject which is mostly independent but pays §Y25%§! of their monthly Energy Credits and Minerals in tribute to their Overlord.\nCan Expand: £trigger_yes£\nHas Diplomatic Powers: £trigger_yes£\nProtected By Overlord: £trigger_yes£\nDefends Overlord: £trigger_no£\nCan Be Integrated: £trigger_no£"

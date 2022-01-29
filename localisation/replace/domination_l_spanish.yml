@@ -1,0 +1,13 @@
+﻿l_spanish:
+ civic_tooltip_feudal_realm_effects: "Puede elegir tipos vasallos y tributarios independientemente de la ética del gobierno."
+
+ tr_domination_colonial_viceroys: "Cerebros auxiliares"
+ tr_domination_colonial_viceroys_desc: "£blocker£ §Y$MOD_PLANET_CLEAR_BLOCKER_COST_MULT$§! reducido por §G33%§!.\n§Y$mod_decisions_influence_cost_mult$§! reducido por §G20%§!.\nDesbloquea nuevas decisiones planetarias."
+ tr_domination_adopt_void_desc: "£alloys£ §YHabitat Upkeep§! reducido por §G20%§!\n§Y$mod_decisions_influence_cost_mult$§! reducido por §G20%§!.\nDesbloquea nuevas decisiones planetarias."
+ tr_domination_grand_council_desc: "§Y$MOD_COUNTRY_LEADER_POOL_SIZE$§! incrementado por §Y1§!.\nLas nuevas §YLeaders§! han reducido el costo y el mantenimiento."
+ tr_domination_imperious_architecture_desc: "Los £building£ §Yedificios capitales§! y £building£ §Yedificios de alojamiento§! proporcionan §G+1§! £housing£ §Y$MOD_PLANET_HOUSING_ADD$§! cada uno.\nNuestros planetas ganan §Y1§! £job_soldier£ §Y$job_soldier$ Job§! y §Y1§! por §Y25§! Pops."
+ tr_domination_modular_depot_desc: "§Y$EMPIRE_SIZE$§! por §Ydistritos§! se reduce en un §G25%§!.\nNuestros planetas ganan §Y1§! £job_warrior_drone£ §Y$job_warrior_drone$ Job§! y §Y1§! por §Y25§! Pops."
+ tr_domination_synaptic_extensions_desc: "El £building£ §Y$building_hive_node$§! ahora también aumenta £housing£ §Y$MOD_PLANET_HOUSING_ADD$§! en §Y2§!.\nNuestros planetas ganan §Y1§! £job_warrior_drone£ §Y$job_warrior_drone$ Job§! y §Y1§! por §Y25§! Pops."
+
+ SUBJECT_DESC_vassal: "Los vasallos quedan supeditados a su dominador. Tienen opciones políticas limitadas y luchan junto a este.\nPuede Expandirse: £trigger_no£\nTiene Podreres Diplomaticos: £trigger_no£\nProtección Dominador: £trigger_yes£\nDefiende Señor: £trigger_yes£\nPuede ser Integrado: £trigger_yes£"
+ SUBJECT_DESC_tributary: "Los tributarios son súbditos independientes en su mayor parte, pero pagan a sus dominadores un tributo mensual del 25% de créditos energéticos y minerales.\nPuede Expandirse: £trigger_yes£\nTiene Podreres Diplomaticos: £trigger_yes£\nProtección Dominador: £trigger_yes£\nDefiende Señor: £trigger_no£\nPuede ser Integrado: £trigger_no£"

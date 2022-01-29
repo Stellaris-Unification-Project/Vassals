@@ -1,0 +1,267 @@
+tr_domination_adopt = {
+	modifier = {
+		country_base_influence_produces_add = 1
+	}
+}
+
+tr_domination_finish = {
+	modifier = {
+		country_admin_cap_mult = 0.20
+		ascension_perks_add = 1
+	}
+}
+
+tr_domination_colonial_viceroys = {
+	modifier = {
+		decisions_influence_cost_mult = -0.20
+		deposit_blockers_cost_mult = -0.333
+	}
+
+	on_enabled = {
+		set_country_flag = exalted_domination_planetary_decisions
+	}
+
+	tradition_swap = {
+		name = tr_domination_colonial_viceroys_machine
+		inherit_effects = yes
+		inherit_icon = yes
+		trigger = {
+			is_machine_empire = yes
+			NOT = { has_origin = origin_void_dwellers }
+		}
+
+		weight = {
+			factor = 1
+		}
+	}
+
+	tradition_swap = {
+		name = tr_domination_colonial_viceroys_hive
+		inherit_effects = yes
+		inherit_icon = yes
+		trigger = {
+			is_hive_empire = yes
+		}
+
+		weight = {
+			factor = 1
+		}
+	}
+
+	tradition_swap = {
+		name = tr_domination_adopt_void
+		inherit_name = yes
+		inherit_icon = yes
+		trigger = {
+			has_origin = origin_void_dwellers
+		}
+		# Effects are implemented in 00_capital_buildings.txt
+		modifier = {
+			decisions_influence_cost_mult = -0.25
+		}
+		weight = {
+			factor = 1
+		}
+	}
+
+	ai_weight = {
+		factor = 1000
+	}
+}
+
+tr_domination_imperious_architecture = {
+
+	# additional housing implemented in building files
+	modifier = {
+		job_soldier_add = 1 # base 1 per colony
+		job_soldier_per_pop = 0.04 # additional per 25
+	}
+
+	tradition_swap = {
+		name = tr_domination_synaptic_extensions
+		inherit_icon = yes
+		trigger = {
+			is_hive_empire = yes
+		}
+		modifier = {
+			job_warrior_drone_add = 1
+			job_warrior_drone_per_pop = 0.04
+		}
+		weight = {
+			factor = 1
+		}
+	}
+
+	tradition_swap = {
+		name = tr_domination_modular_depot
+		inherit_icon = yes
+		trigger = {
+			is_machine_empire = yes
+		}
+		modifier = {
+			job_warrior_drone_add = 1
+			job_warrior_drone_per_pop = 0.04
+			empire_size_districts_mult = -0.25
+		}
+		weight = {
+			factor = 1
+		}
+	}
+
+	ai_weight = {
+		factor = 10
+	}
+}
+
+tr_domination_grand_council = {
+	possible = {
+		has_tradition = tr_domination_imperious_architecture
+		has_tradition = tr_domination_colonial_viceroys
+	}
+
+	modifier = {
+		country_leader_pool_size = 1
+	}
+
+	on_enabled = {
+		set_country_flag = exalted_domination_leaders_eager
+		every_pool_leader = {
+			if = {
+				limit = { NOT = { has_trait = trait_mechanical } }
+
+				if = {
+					limit = { has_trait = leader_trait_eager }
+
+					add_trait = leader_trait_adaptable
+				}
+				else = {
+					add_trait = leader_trait_eager
+				}
+			}
+			else_if = {
+				limit = { has_trait = trait_mechanical }
+
+				if = {
+					limit = { has_trait = leader_trait_newboot }
+
+					add_trait = leader_trait_flexible_programming
+				}
+				else = {
+					add_trait = leader_trait_newboot
+				}
+			}
+		}
+	}
+
+	tradition_swap = {
+		name = tr_domination_multi_thread
+		inherit_effects = yes
+		inherit_icon = yes
+		trigger = {
+			is_machine_empire = yes
+		}
+		weight = {
+			factor = 1
+		}
+	}
+
+	tradition_swap = {
+		name = tr_domination_synaptic_network
+		inherit_effects = yes
+		inherit_icon = yes
+		trigger = {
+			is_hive_empire = yes
+		}
+		weight = {
+			factor = 1
+		}
+	}
+
+	ai_weight = {
+		factor = 10
+	}
+}
+
+tr_domination_judgment_corps = {
+
+	# effect implemented in jobs file
+
+	tradition_swap = {
+		name = tr_domination_trust_officers
+		inherit_effects = yes
+		inherit_icon = yes
+		trigger = {
+			is_regular_empire = yes
+			OR = {
+				is_egalitarian = yes
+				AND = {
+					is_authoritarian = no
+					is_xenophobe = no
+				}
+			}
+		}
+		weight = {
+			factor = 1
+		}
+	}
+
+	# effect implemented in jobs file
+
+	tradition_swap = {
+		name = tr_domination_deviancy_protocols
+		trigger = {
+			is_machine_empire = yes
+		}
+		modifier = {
+			planet_crime_no_happiness_add = -10
+		}
+		weight = {
+			factor = 1
+		}
+	}
+
+	tradition_swap = {
+		name = tr_domination_divergence_supression
+		trigger = {
+			is_hive_empire = yes
+		}
+		modifier = {
+			planet_crime_no_happiness_add = -10
+		}
+		weight = {
+			factor = 1
+		}
+	}
+
+	ai_weight = {
+		factor = 10
+	}
+}
+
+tr_domination_workplace_motivators = {
+	possible = {
+		has_tradition = tr_domination_judgment_corps
+	}
+
+	modifier = {
+		planet_jobs_worker_produces_mult = 0.05
+		planet_jobs_slave_produces_mult = 0.05
+	}
+
+	tradition_swap = {
+		name = tr_domination_drone_network
+		trigger = {
+			is_gestalt = yes
+		}
+		modifier = {
+			planet_jobs_simple_drone_produces_mult = 0.05
+		}
+		weight = {
+			factor = 1
+		}
+	}
+
+	ai_weight = {
+		factor = 10
+	}
+}

@@ -1,0 +1,47 @@
+# Menace Objective - Have Vassals
+# Fired from on_action 'on_yearly_pulse'
+event = {
+	id = crisis.5000
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		any_country = {
+			has_ascension_perk = ap_become_the_crisis
+			is_overlord = yes
+		}
+	}
+
+	immediate = {
+		every_playable_country = {
+			if = {
+				limit = {
+					has_ascension_perk = ap_become_the_crisis
+					is_overlord = yes
+				}
+				every_subject = {
+					limit = {
+						OR = {
+							is_subject_type = exalted_subject_automated_assembler
+							is_subject_type = exalted_subject_beneficiary
+							is_subject_type = exalted_subject_cultural_conservation
+							is_subject_type = exalted_subject_dominion
+							is_subject_type = exalted_subject_exarchate
+							is_subject_type = exalted_subject_noble_house
+							is_subject_type = exalted_subject_pet
+							is_subject_type = exalted_subject_remote_archive
+							is_subject_type = exalted_subject_special_administrative_region
+							is_subject_type = exalted_subject_symbiont
+							is_subject_type = exalted_subject_warden
+							is_subject_type = exalted_subject_xenoharvest
+							is_subject_type = vassal
+						}
+					}
+					prev = {
+						complete_crisis_objective = crisobj_have_vassals
+					}
+				}
+			}
+		}
+	}
+}

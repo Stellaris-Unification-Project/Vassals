@@ -1,0 +1,13 @@
+﻿l_simp_chinese:
+ civic_tooltip_feudal_realm_effects: "你可以无视主流思潮选择封臣和朝贡类型。"
+
+ tr_domination_colonial_viceroys: "行政决策"
+ tr_domination_colonial_viceroys_desc: "£blocker£§Y$MOD_PLANET_CLEAR_BLOCKER_COST_MULT$§!降低§G33%§!。\n§Y$mod_decisions_influence_cost_mult$§!降低§G20%§!。\n解锁新的星球决策。"
+ tr_domination_adopt_void_desc: "£alloys£ §YHabitat Upkeep§!降低§G20%§!。\n§Y$mod_decisions_influence_cost_mult$§!降低§G20%§!。\n解锁新的星球决策。"
+ tr_domination_grand_council_desc: "§Y$MOD_COUNTRY_LEADER_POOL_SIZE$§!提高§Y1§!。\n新§Y领袖§!花销和维护费降低。"
+ tr_domination_imperious_architecture_desc: "每个£building£ §Y首都建筑§!和£building£ §Y住房建筑§!提供§G+1§! £housing£ §Y$MOD_PLANET_HOUSING_ADD$§!。此外§Y$MOD_ARMY_UPKEEP_MULT$§!减少§G33%§!。"
+ tr_domination_modular_depot_desc: "来自§Y区划§!的§Y$EMPIRE_SIZE$§!降低§G25%§!。此外，§Y$MOD_ARMY_UPKEEP_MULT$§!降低§G30%§!。"
+ tr_domination_synaptic_extensions_desc: "£building£ §Y$building_hive_node$§!现在也给予§Y2§!的£housing£ §Y$MOD_PLANET_HOUSING_ADD$§!。此外，§Y$MOD_ARMY_UPKEEP_MULT$§!降低§G30%§!。"
+
+ SUBJECT_DESC_vassal: "附庸国臣服于他们的宗主。他们仅有有限的外交选择，且必须与其宗主并肩作战。\n能否扩张：£trigger_no£\n是否拥有外交权：£trigger_no£\n受到宗主国保护：£trigger_yes£\n捍卫宗主国：£trigger_yes£\n能否被合并：£trigger_yes£"
+ SUBJECT_DESC_tributary: "进贡国是一种臣服类型，大多是独立的，但每月要向宗主缴纳§Y25%§!的能量币和矿物作为朝贡。\n能否扩张：£trigger_yes£\n是否拥有外交权：£trigger_yes£\n受到宗主国保护：£trigger_yes£\n捍卫宗主国：£trigger_no£\n能否被合并：£trigger_no£"
